@@ -10,7 +10,7 @@ const BASE_URL = 'http://alurakut.vercel.app/';
 export default function myGalery(){
     return (
 
-       <>
+    <>
 
     <AlurakutMenu/> 
 
@@ -18,14 +18,14 @@ export default function myGalery(){
         <Box>
             <AlurakutProfileSidebarMenuDefault />  
         </Box>        
-             
-           <Box>
-           <Galery>
+            
+        <Box>
+        <Galery>
                 <h1>Minha Galeria De Fotos!</h1>
 
                 <div className="image-content">
-                    {/* Os Dados Das Fotos Viram Dinamicamente Da Api Do Datocms */}
-                    <img src={`https://github.com/dvamleite.png`} />
+                    {/* Os Dados Das Fotos Viram Dinamicamente Da Api Do Datocms */}                      
+                    <img src={`https://github.com/dvamleite.png`} />                               
                     <img src={`https://github.com/juunegreiros.png`} />
                     <img src={`https://github.com/omariosouto.png`} />
                     <img src={`https://github.com/peas.png`} />
@@ -36,13 +36,12 @@ export default function myGalery(){
                     <img src={`${BASE_URL}/icons/plus.svg`} />
                     
                 </div>
-               
+        
             </Galery>      </Box>     
-           
+
         </MainGrid>     
     
-       
-       </>
+</>
 
- )       
+)       
 }

@@ -25,7 +25,7 @@ export default function LoginScreen() {
                 fetch('https://alurakut.vercel.app/api/login', {
                     method: 'POST',
                     headers: {
-                       'Content-Type': 'application/json'  
+                      'Content-Type': 'application/json'  
                     },
                     body: JSON.stringify({ githubUser: githubUser })
                 })

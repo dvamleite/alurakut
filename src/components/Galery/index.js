@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Gallery = styled.main`
-    width: 900px;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -13,31 +13,54 @@ const Gallery = styled.main`
 
     .image-content{
         display: flex;       
-        flex-wrap: wrap;
-        max-width: 900px;
-
+        align-items: center;
+        align-items: center;
+        flex-wrap: wrap;       
+        width: 100%;
+        min-width: 600px;
     }
 
     img{
         width: 180px;
         height: 180px;
 
-        margin: 10px;
-        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 5px;
+        padding: 5px;
 
         border-radius: 18px;
 
         background-color: #FFFFFF;
     }
 
-    p{
-        font-size: 20px;
-        color: red;
-        text-align: center;
-    }
-
     img:hover{       
         background-color: greenyellow;
+    }
+
+    @media(max-width: 860px){
+        img{
+            align-content: center;
+            width: 31%;
+            height: 15vh;       
+        }
+        
+        .image-content{
+            min-width: 100%;
+        }
+    }
+
+     @media(max-width: 320px){
+        img{           
+            width: 45%;
+            height: 15vh;       
+        }
+        
+        .image-content{
+            min-width: 100%;
+        }
     }
 `
 
